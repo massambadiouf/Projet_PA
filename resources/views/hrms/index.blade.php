@@ -26,8 +26,8 @@
                       <div id="back" class="card">
                           <div style="background-color:#fe6703;" class="card-status bg-succes"></div>
                       <div class="mt-1 mb-3 p-3 button-container  ">
-                            <h6 class="mb-2">Liste des PA</h6>
-                            <div id="divTableDataHolder" class="table-responsive">
+                            <h6 class="mb-2"></h6>
+                            <div style="margin-top:-38px;"  id="divTableDataHolder" class="table-responsive">
                                 <table id="ejemplo" class="table table-vcenter table-striped table_custom spacing5 border-style mb-0table-bordered">
                                     <thead class="color">
                                         <tr>
@@ -114,8 +114,8 @@
                                                         <p class="text-center"> Voulez-vous vraiment supprimé le PA <strong> N° 1 </strong> ? </p>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <a href="" class="btn btn-danger" style="color:white; background-color:#dc3545;"> Supprimer </a>
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Annuler </button>
+                                                        <a href="#" class="btn btn-davnger" style="color:white; background-color:red;"> Supprimer </a>
+                                                        <a href="#" class="btn btn-davnger" ><button style="color:white; background-color:black;" type="button" class="btn btn-secnondary" data-dismiss="modal"> Annuler </button></a>
                                                     </div>
                                                 </div>
                                             </div>

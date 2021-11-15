@@ -131,7 +131,7 @@
                         </div>
                     </div> -->
                     <div class="dropdown d-flex">
-                        <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown">Ibrahima DIOUF    <i class="fa fa-user"></i></a>
+                        <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown">Mass DIOUF    <i class="fa fa-user"></i></a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                            
                             <a class="dropdown-item" href="{{route('authentication.login')}}"><i class="dropdown-icon fe fe-log-out"></i> Déconnexion</a>

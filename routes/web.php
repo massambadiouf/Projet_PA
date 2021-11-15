@@ -20,6 +20,7 @@ Route::get('hrms/detail_pa',                      'HrmsController@detail_pa')->n
 Route::get('hrms/modifier_pa',                      'HrmsController@modifier_pa')->name('hrms.modifier_pa');
 Route::get('hrms/utilisateur',                      'HrmsController@utilisateur')->name('hrms.utilisateur');
 
+Route::get('hrms/modifier_utilisateur',                      'HrmsController@modifier_utilisateur')->name('hrms.modifier_utilisateur');
 
 
 /* Authentication  */

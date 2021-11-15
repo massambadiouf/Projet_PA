@@ -6,8 +6,9 @@
     <nav id="left-sidebar-nav" class="sidebar-nav">
         <ul class="metismenu">
             <li class="g_heading">Hr</li>
-            <li class="{{ Request::segment(2) === 'index' ? 'active' : null }}"><a href="{{route('hrms.index')}}"><i class="icon-speedometer" ></i><span>Liste des PA</span></a></li>
-            <li class="{{ Request::segment(2) === 'index' ? 'activen' : null }}"><a href="{{route('authentication.login')}}"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Quitter</span></a></li>
+            <li class="{{ Request::segment(2) === 'index' ? 'active' : null }}"><a href="{{route('hrms.index')}}"><i class="fe fe-slack" ></i><span>Liste des PA</span></a></li>
+            <li class="{{ Request::segment(2) === 'utilisateur' ? 'active' : null }}"><a href="{{route('hrms.utilisateur')}}"><i class="fe fe-user" ></i><span>Utilisateur</span></a></li>
+            <li class="{{ Request::segment(2) === 'index' ? 'activen' : null }}"><a href="{{route('authentication.login')}}"><i class="fe fe-log-out" aria-hidden="true"></i><span>Quitter</span></a></li>
            <span class="cent mr-5"><img src="{{URL::to('assets/images/ori_3804685_jxcl53g8zrm4em9po59shf59tkf0ggorh72crex8_monogram-pa-logo-design.png')}}" alt="person"
                         width="120px" height="120px" /></span> 
          
