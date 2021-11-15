@@ -15,6 +15,12 @@ class HrmsController extends BaseController
      function modifier_pa(){
         return view('hrms.modifier_pa');
     }
+     function utilisateur(){
+        return view('hrms.utilisateur');
+    }
+    function modifier_utilisateur(){
+        return view('hrms.modifier_utilisateur');
+    }
    
 
 }
