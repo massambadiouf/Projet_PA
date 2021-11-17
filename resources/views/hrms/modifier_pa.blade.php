@@ -1,25 +1,19 @@
 @extends('layout.master')
-
 @section('title', '')
-
-
 @section('content')
     <div class="header-action marg  ">
       <a href="{{route('hrms.index')}}"> <button  type="button" style="background-color:#fe6703;color:#fff; margin-top:-70px;" class="btn   text-light" ><i class="fa fa-arrow-left mr-2"></i>retour</button></a>
     </div>
- 
     <div  class="section-body">
         <div class="container-fluid">
             <div class="tab-content">
                 <div class="tab-pane fade " id="Employee-list" role="tabpanel">
-
                 </div>
              <div class="tab-pane fade show active" id="user-add" role="tabpanel">
                         <div class="card">
                             <div class="card-body">
                                 <div class="mb-5">
                                 <small style="background-color:#fe6703;color:#fff;" class="float-left badge badge-primary">PA-1</small></div>
-
                                 <div class="row clearfix">
                                 <div class="col-lg-6 col-md-6">
                                        <b><label for="">Semaine</label></b> 
@@ -90,10 +84,8 @@
                                         <span class="input-group-text"><i class="fa fa-bookmark"></i></span>
                                     </div>
                                     <select name="user" id="select-users" class="form-control custom-select">
-                                      
                                             <option value="IDR">IDR</option>
-                                            <option value="SAM">SAM</option> 
-                                          
+                                            <option value="SAM">SAM</option>  
                                     </select>
                                 </div>
                          </div>
@@ -131,7 +123,6 @@
                                     <div class="mr-5">
                                         <img width="450px" height="215px" src="../assets/images/image_xlarge.png" data-toggle="tooltip" title="" /><br></div>
                                         <img width="450px" height="215px" src="../assets/images/map.png" data-toggle="tooltip" title="" /><br>
-
                                 </div>
                          </div>
                           <div class="col-lg-12 col-md-6">

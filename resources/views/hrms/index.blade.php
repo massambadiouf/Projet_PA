@@ -1,15 +1,10 @@
 @extends('layout.master')
-@section('title', '')
+@section('title', 'PA')
 @section('content')
  <div class="section-body">
             <div class="container-fluid">  
                 <div class="d-flex justify-content-between align-items-center">
                     <ul class="nav hidden nav-tabs page-header-tab">
-                         <div class="header-action ml-3">
-                        <!-- <button type="button" class="btn bg-blue text-light" data-toggle="modal" data-target="#exampleModal"><i class="icon-printer mr-2"></i>Imprimer</button>
-                        <button type="button" class="btn bg-green text-light ml-2" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-file-excel-o mr-2"></i>Excel</button>
-                        <button type="button" style="background-color:red" class="btn btn-danger text-light ml-2" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-file-pdf-o mr-2"></i>PDF</button> -->
-                    </div>
                     </ul>
                     <div class="header-action mb-1">
                         <button style="background-color:green ;color:white;" type="button" class="btn bg-greebn text-light" data-toggle="modal" data-target="#exampleModal"><i class="fe fe-plus mr-2"></i>Nouveau PA</button>
@@ -17,7 +12,6 @@
                 </div>
             </div>
         </div>
-
     <div  class="section-body">
         <div class="container-fluid">
             <div class="tab-content">
@@ -27,7 +21,7 @@
                           <div style="background-color:#fe6703;" class="card-status bg-succes"></div>
                       <div class="mt-1 mb-3 p-3 button-container  ">
                             <h6 class="mb-2"></h6>
-                            <div style="margin-top:-38px;"  id="divTableDataHolder" class="table-responsive">
+                            <div style="margin-top:-35px;"  id="divTableDataHolder" class="table-responsive">
                                 <table id="ejemplo" class="table table-vcenter table-striped table_custom spacing5 border-style mb-0table-bordered">
                                     <thead class="color">
                                         <tr>
@@ -100,26 +94,25 @@
 
 @section('popup')
  <div class="modal fade" id="modal-delete">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title"> Suppression </h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                    <h5 class="text-center"> <i class="fe fe-alert-octagon text-warning font-50"></i> </h5>
-
-                                                        <p class="text-center"> Voulez-vous vraiment supprimé le PA <strong> N° 1 </strong> ? </p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <a href="#" class="btn btn-davnger" style="color:white; background-color:red;"> Supprimer </a>
-                                                        <a href="#" class="btn btn-davnger" ><button style="color:white; background-color:black;" type="button" class="btn btn-secnondary" data-dismiss="modal"> Annuler </button></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+        <div class="modal-header">
+         <h5 class="modal-title"> Suppression </h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+         </button>
+        </div>
+      <div class="modal-body">
+        <h5 class="text-center"> <i class="fe fe-alert-octagon text-warning font-50"></i> </h5>
+        <p class="text-center"> Voulez-vous vraiment supprimé le PA <strong> N° 1 </strong> ? </p>
+      </div>
+     <div class="modal-footer">
+        <a href="#" class="btn btn-davnger" style="color:white; background-color:red;"> Supprimer </a>
+        <a href="#" class="btn btn-davnger" ><button style="color:white; background-color:#5a6268;" type="button" class="btn btn-secnondary" data-dismiss="modal"> Annuler </button></a>
+    </div>
+ </div>
+</div>
+</div>
    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -190,8 +183,7 @@
                                             <option value="S52" >S52</option>
                                     </select>
                                 </div>
-                         </div>
-                       
+                         </div>  
                         <div class="col-lg-6 col-md-6">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
@@ -204,7 +196,6 @@
                                     </select>    
                                 </div>
                          </div>
-                     
                           <div class="col-lg-12 col-md-6">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
@@ -213,7 +204,6 @@
                                        <input type="text" class="form-control" placeholder="PA">
                                 </div>
                          </div>
-                     
                         <div class="col-lg-12 col-md-6">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
@@ -237,9 +227,7 @@
                                     </div>
                                         <input placeholder="Ex: 22/10/2021" data-provide="datepicker" data-date-autoclose="true" class="form-control" data-date-format="dd/mm/yyyy">
                                 </div>
-                         </div>
-                  
-                        
+                         </div>     
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -249,7 +237,6 @@
             </div>
         </div>
     </div>
-
 @stop
 
 @section('page-styles')
@@ -259,20 +246,7 @@
 @stop
 
 @section('page-script')
- <!-- library js -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
-        <!-- <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
-        <!-- <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script> -->
-        <!-- <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script> -->
-        <!-- <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.bootstrap4.min.js"></script> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-        <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script> -->
-        <!-- <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script> -->
-        <!-- <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.colVis.min.js"></script> -->
+
 <script>
    var idioma = {
         "sProcessing": "En traitement...",

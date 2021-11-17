@@ -1,7 +1,5 @@
 @extends('layout.master')
 @section('title', '')
-
-
 @section('content')
     <div class="header-action marg  ">
       <a href="{{route('hrms.utilisateur')}}"> <button  type="button" style="background-color:#fe6703;color:#fff; margin-top:-70px;" class="btn   text-light" ><i class="fa fa-arrow-left mr-2"></i>retour</button></a>
@@ -36,8 +34,7 @@
                                          </div>
                                             <input type="text" class="form-control" placeholder="Prénom" value="Ibrahima">
                                          </div>
-                                    </div>
-                                    
+                                    </div>  
                                     <div class="col-lg-4 col-md-6">
                                     <b><label for="">Nom : </label></b>
                                        <div class="input-group mb-3">
@@ -87,8 +84,6 @@
                                             <input type="text" class="form-control" placeholder="Confirmer mot de passe">
                                          </div>
                                     </div>
-                                                               
-
                                     <div class="col-12">
                                         <hr class="mt-4">
                                         <h6>Permissions utilisateur</h6>
@@ -103,8 +98,7 @@
                                                         <th>Supprimer PA</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody>
-                                                   
+                                                <tbody>   
                                                     <tr>
                                                         <td>Admin</td>
                                                         <td>
@@ -132,14 +126,11 @@
                                                             </label>
                                                         </td>
                                                     </tr>
-                                                  
-                                     
                                                 </tbody>
                                             </table>
                                         </div>
                                       <button type="button" style="background-color:green ;color:white;" class="btn btn-succerss text light">Enregistrer</button>
                                       <button type="button" style="background-color:red ;color:white;" class="btn btn-danger" data-dismiss="modal">Annuler</button>
-
                                     </div>
                                      </div>
                                 </div>
@@ -147,9 +138,7 @@
                         </div>
                     </div>
                 <!-- </div>
-           </div> -->
-           
-      
+           </div> -->     
 @stop
 
 @section('popup')
@@ -179,10 +168,6 @@
 @stop
 
 @section('page-styles')
-<!-- <link rel="stylesheet" href="{{ asset('assets/plugins/sweetalert/sweetalert.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/plugins/dropify/css/dropify.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets1/css/dataTables.bootstrap4.min.css') }}"> -->
 @stop
 
 @section('page-script')

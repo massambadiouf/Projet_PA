@@ -7,7 +7,12 @@
         <div class="hright">
             <div class="dropdown">
                 <!-- <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-gear fa-spin" data-toggle="tooltip" data-placement="right" title="Settings"></i></a> -->
-                <a href="javascript:void(0)" class="nav-link "><img class="avatar" src="../assets/images/xs/avatar1.jpg" alt="" data-toggle="tooltip" data-placement="right" title="User Menu"/></a>
+                <a href="javascript:void(0)" class="nav-link ">
+                    <ul class="list-unstyled team-info sm margin-0 ">
+                        <li><img class="avatar" src="../assets/images/xs/avatar1.jpg" alt="" data-toggle="tooltip" data-placement="right" title="Mass DIOUF"/>
+                        </li>
+                    </ul>
+                </a>
                 
                 
                 <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa  fa-align-left" style="color:#fe6703;" ></i></a>

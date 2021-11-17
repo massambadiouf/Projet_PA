@@ -40,7 +40,7 @@ margin-right: auto;
    }
   *html #footer {
 	margin-top: -2px; /* prevents infinite scroll if #footer have a border of 2px*/
-	position: absolute;
+	position: fixed;
 	top: expression(documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight));
 }
    

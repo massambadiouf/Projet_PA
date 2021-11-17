@@ -18,28 +18,26 @@
             <div class="container-fluid">
                 <div class="tab-content mt-3">
                     <div class="tab-pane fade show active" id="user-list" role="tabpanel">
-                        <div class="card " style="margin-bottom:60px;">
+                        <div class="card " >
                             <div style="background-color:#fe6703;"  class="card-status card-status-left bg-succes"></div>
-                            <div style="margin-bottom:-28px;" class="card-header">
+                            <div style="margin-bottom:-20px;" class="card-header">
                                   <div class="card-options">
                                     <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>                                    
                                 </div>
                             </div>
                             <div  class="card-body">
                                 <div class="table-responsive">
-                                    <table  id="ejemploo" class="table table-striped table-hover table-vcenter text-nowrap mb-0 table-hover js-basic-example dataTable table_custom border-style spacing5">
+                                    <table style="width:100%" id="ejemploo" class="table dt-responsive table-striped table-hover table-vcenter text-nowrap mb-0 table-hover  dataTable table_custom border-style spacing5">
                                         <thead class="thead color">
                                             <tr>
                                                 <th class="w20 text-light">IMG</th>
                                                 <th class="text-light w150"> NOM  &  PRENOM  &  MAIL </th>
                                                 <th class="text-light w20">Role</th>
                                                 <th class="text-light text-center  w20">Date</th>
-                                             
                                                 <th class="w100 text-center text-light">Actions</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            
+                                        <tbody> 
                                             <tr>
                                                 <td class="text-center">
                                                     <ul class="list-unstyled team-info sm margin-0 ">
@@ -50,11 +48,9 @@
                                                     <h6 class="mb-0">Mass DIOUF</h6>
                                                     <span>Massdiouf90@gmail.com</span>
                                                 </td>
-                                                <td><span style="background-color:#fe6703;"  class="tag tag-danger">Super Admin</span></td>
+                                                <td><span class="badge badge-success">Super Admin</span></td>
                                                 <td class="text-center">28/06/2021</td>
-                                              
                                                 <td class="text-center">
-                                                   <!-- <a href=""><button type="button" class="btn btn-sm  btn-icon btn-outline-success" title="Voir plus"><i class="icon-eye"></i></button></a>  -->
                                                    <a href="{{route('hrms.modifier_utilisateur')}}"><button type="button" style="color:#004660;"  class="btn btn-sm  btn-icon " title="Modifier"><i class="icon-pencil"></i></button></a> 
                                                    <a href="#" data-toggle="modal"   data-target="#modal-delete"><button style="color:red;"  type="button" class="btn btn-sm  btn-icon" title="Supprimer" data-type="confirm"><i class="icon-trash"></i></button></a>  
                                                 </td>
@@ -69,16 +65,13 @@
                                                     <h6 class="mb-0">Ibrahima DIOUF</h6>
                                                     <span>Ibrahimadiouf810@gmail.com</span>
                                                 </td>
-                                                <td><span class="tag tag-danger">Admin</span></td>
+                                                 <td><span class="badge badge-info">Admin</span></td>
                                                 <td class="text-center">22/10/2021</td>
-                                              
                                                 <td class="text-center">
-                                                    <!-- <a href=""><button type="button" class="btn btn-sm  btn-icon btn-outline-success" title="Voir plus"><i class="icon-eye"></i></button></a>  -->
                                                    <a href="{{route('hrms.modifier_utilisateur')}}"><button type="button" style="color:#004660;"  class="btn btn-sm  btn-icon " title="Modifier"><i class="icon-pencil"></i></button></a> 
                                                    <a href="#" data-toggle="modal"   data-target="#modal-delete"><button style="color:red;"  type="button" class="btn btn-sm  btn-icon" title="Supprimer" data-type="confirm"><i class="icon-trash"></i></button></a>  
                                                 </td>
-                                            </tr>
-                                          
+                                            </tr> 
                                             <tr>
                                                 <td class="text-center">
                                                      <ul class="list-unstyled team-info sm margin-0 ">
@@ -89,10 +82,9 @@
                                                     <h6 class="mb-0">Landing Goudiaby</h6>
                                                     <span>Goudiaby.landing00@gmail.com</span>
                                                 </td>
-                                                <td><span style="background-color:#004660; color:white;" class="tag tag-black">User Simple</span></td>
+                                                <td><span class="badge badge-default">User Simple</span></td>
                                                 <td class="text-center">28/12/2021</td>
                                                 <td class="text-center">
-                                                   <!-- <a href=""><button type="button" class="btn btn-sm  btn-icon btn-outline-success" title="Voir plus"><i class="icon-eye"></i></button></a>  -->
                                                   <a href="{{route('hrms.modifier_utilisateur')}}"><button type="button" style="color:#004660;"  class="btn btn-sm  btn-icon " title="Modifier"><i class="icon-pencil"></i></button></a> 
                                                    <a href="#" data-toggle="modal"   data-target="#modal-delete"><button style="color:red;"  type="button" class="btn btn-sm  btn-icon" title="Supprimer" data-type="confirm"><i class="icon-trash"></i></button></a>  
                                                 </td>
@@ -107,16 +99,13 @@
                                                     <h6 class="mb-0">Oumy DIOP</h6>
                                                     <span>diop.oumy008@gmail.com</span>
                                                 </td>
-                                                <td><span class="tag tag-danger">Admin</span></td>
+                                                 <td><span class="badge badge-info">Admin</span></td>
                                                 <td class="text-center">21/09/2021</td>
-                                               
                                                 <td class="text-center">
-                                                   <!-- <a href=""><button type="button" class="btn btn-sm  btn-icon btn-outline-success" title="Voir plus"><i class="icon-eye"></i></button></a>  -->
                                                   <a href="{{route('hrms.modifier_utilisateur')}}"><button type="button" style="color:#004660;"  class="btn btn-sm  btn-icon " title="Modifier"><i class="icon-pencil"></i></button></a> 
                                                    <a href="#" data-toggle="modal"   data-target="#modal-delete"><button style="color:red;"  type="button" class="btn btn-sm  btn-icon" title="Supprimer" data-type="confirm"><i class="icon-trash"></i></button></a>  
                                                 </td>
-                                            </tr>
-                                            
+                                            </tr>     
                                         </tbody>
                                     </table>
                                 </div>
@@ -131,8 +120,7 @@
                                         <div class="card">
                                             <div class="card-body">
                                                 <input type="file" id="dropify-event" data-default-file="../assets/images/gallery/1.png">
-                                            </div>
-                                            
+                                            </div> 
                                         </div>
                                     </div>
                                 <div class="row clearfix">
@@ -145,7 +133,6 @@
                                             <input type="text" class="form-control" placeholder="Prénom">
                                          </div>
                                     </div>
-                                    
                                     <div class="col-lg-4 col-md-6">
                                        <div class="input-group mb-3">
                                          <div class="input-group-prepend">
@@ -191,8 +178,6 @@
                                             <input type="text" class="form-control" placeholder="Confirmer mot de passe">
                                          </div>
                                     </div>
-                                                               
-
                                     <div class="col-12">
                                         <hr class="mt-4">
                                         <h6>Permissions utilisateur</h6>
@@ -301,10 +286,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-          
-           
-      
+                </div>     
 @stop
 
 @section('popup')
@@ -334,10 +316,7 @@
 @stop
 
 @section('page-styles')
-<!-- <link rel="stylesheet" href="{{ asset('assets/plugins/sweetalert/sweetalert.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/plugins/dropify/css/dropify.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets1/css/dataTables.bootstrap4.min.css') }}"> -->
+
 @stop
 
 @section('page-script')
